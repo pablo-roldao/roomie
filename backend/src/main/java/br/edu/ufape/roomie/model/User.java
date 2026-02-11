@@ -6,7 +6,9 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
+import br.edu.ufape.roomie.enums.UserGender;
+import br.edu.ufape.roomie.enums.UserRole;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -35,7 +37,7 @@ public class User implements UserDetails {
     private UserGender gender;
 
     @Enumerated(EnumType.STRING)
-    @Column(nome = "cargo")
+    @Column(name = "cargo")
     private UserRole role;
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)

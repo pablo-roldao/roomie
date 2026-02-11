@@ -1,5 +1,6 @@
 package br.edu.ufape.roomie.service;
 
+import br.edu.ufape.roomie.dto.UserDTO;
 import br.edu.ufape.roomie.dto.UserResponseDTO;
 import br.edu.ufape.roomie.model.User;
 import br.edu.ufape.roomie.repository.UserRepository;
@@ -36,7 +37,7 @@ public class AuthService implements UserDetailsService {
                 newUser.addTelefone(numero);
             }
         }
-        User savedUser = this.userRepository.save(newUser)
+        User savedUser = this.userRepository.save(newUser);
 
         UserResponseDTO response = new UserResponseDTO();
         response.setId(savedUser.getId());
