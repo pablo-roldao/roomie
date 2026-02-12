@@ -32,7 +32,7 @@ O objetivo principal é simplificar o processo de encontrar e organizar moradias
 [![My Skills](https://skillicons.dev/icons?i=angular,typescript,html,css)](https://skillicons.dev)
 
 ### Backend
-[![My Skills](https://skillicons.dev/icons?i=java,spring)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,postgres,docker)](https://skillicons.dev)
 
 ## Status do Projeto
 Em desenvolvimento.  
